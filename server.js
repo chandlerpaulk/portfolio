@@ -4,26 +4,24 @@ const express = require('express')
 
 const app = express()
 
-// Local and Environment Ports
+// Environment Ports
 const PORT = process.env.PORT || 5000
 
-// --- MIDDLEWARE --- //
-
-// Set the view engine to use EJS as the template
+// Use ejs as the view engine
 app.set('view engine', 'ejs')
 
-// Use the Public Directory for front end styles and code
+// give server access to static assets in the public directory
 app.use(express.static(path.join(__dirname, 'public')))
 
 // Don't Parse
 app.use(express.urlencoded({ extended: false }))
 
-// Serve Homepage
+// Serve the homepage to the client
 app.get('/', (req, res) => {
     res.render('main/index')
 })
 
-// Listen and Log a report of the connection to the server
+// Log a report of the server connection
 app.listen(PORT, (err) => {
     if (err) console.log('Error in server setup')
     console.log('Portfolio Server listening on Port:', PORT)

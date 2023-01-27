@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "My Portfolio App",
+  "description": "My portfolio website",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,12 +12,12 @@
     "url": "git+https://github.com/chandlerpaulk/portfolio.git"
   },
   "keywords": [
-    "Portfolio",
-    "Chandler",
-    "Software",
-    "Developer",
-    "Engineer",
-    "Designer"
+    "portfolio",
+    "website",
+    "software",
+    "designer",
+    "engineer",
+    "chandler"
   ],
   "author": "Chandler Paulk",
   "license": "ISC",

@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: false }))
 
 // Serve homepage to client
 app.get('/', (req, res) => {
-    res.render('main/index')
+    res.render('index')
 })
 
 // Confirm we're properly connected to the server
